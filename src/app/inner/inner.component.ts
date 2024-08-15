@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
-import { InnerComponent } from './inner/inner.component';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-inner',
   standalone: true,
-  imports: [InnerComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [],
+  templateUrl: './inner.component.html',
+  styleUrl: './inner.component.css'
 })
-export class AppComponent {
+export class InnerComponent {
   getTimeClassic() {
     return new Date().toString();
   }
@@ -22,4 +21,5 @@ export class AppComponent {
   clickedClassic() { }
 
   clickedArrow = () => { };
+
 }

@@ -1,0 +1,26 @@
+<div class="wrapper">
+    <div>
+        Same code in a nested component
+    </div>
+    <div>
+        Time from classic function: {{ getTimeClassic() }}
+    </div>
+    <div>
+        Time from arrow function: {{ getTimeArrow() }}
+    </div>
+    <div>
+        Time from arrow assignment: {{ getTimeArrowImplicit() }}
+    </div>
+    <div>
+        Dummy button with function:
+        <button (click)="clickedClassic()">
+            click me
+        </button>
+    </div>
+    <div>
+        Dummy button with arrow:
+        <button (click)="clickedArrow()">
+            click me
+        </button>
+    </div>
+</div>
